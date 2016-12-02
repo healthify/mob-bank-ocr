@@ -13,4 +13,14 @@ describe NumberParser do
       expect(parsed).to eq "111111111"
     end
   end
+  context "when reading a file of 123456789" do
+    it "returns 123456789" do
+      skip
+      parsed = NumberParser.parse "data/123456789.txt"
+      expect(parsed).to eq "123456789"
+    end
+  end
+  context "when reading a file with two entries" do
+    it "reads the entries"
+  end
 end
